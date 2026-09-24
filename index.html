@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="米田俊祐のポートフォリオ。教育データマイニング、連合学習、機械学習に関する研究・発表実績を紹介します。">
+  <meta name="description" content="米田俊祐のポートフォリオ。教育データマイニング・連合学習の研究、発表実績、長期インターンでの開発経験を紹介します。">
   <meta name="theme-color" content="#07111f">
   <title>Shunsuke Yoneda | Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,31 +13,33 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#top">本文へ移動</a>
   <header class="site-header">
     <a class="brand" href="#top" aria-label="ページ上部へ">SY<span>.</span></a>
     <nav aria-label="メインナビゲーション">
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
+      <a href="#experience">Engineering</a>
       <a href="#skills">Skills</a>
     </nav>
     <a class="header-link" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
   </header>
 
-  <main id="top">
+  <main id="top" tabindex="-1">
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">MACHINE LEARNING · EDUCATIONAL DATA MINING</p>
         <h1 id="hero-title">Shunsuke<br><span>Yoneda</span></h1>
         <p class="hero-ja">米田 俊祐</p>
-        <p class="lead">教育データと機械学習を通して、<br>学習者をより早く、より適切に支援する。</p>
+        <p class="lead">教育データを用いた連合学習と、<br>学習支援のための予測モデルを研究しています。</p>
         <div class="hero-actions">
           <a class="button primary" href="#publications">研究実績を見る</a>
           <a class="button secondary" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
       <aside class="hero-card" aria-label="プロフィール概要">
-        <div class="status"><span></span> Master’s Student</div>
+        <div class="status"> Master’s Student</div>
         <dl>
           <div><dt>Affiliation</dt><dd>Kyushu University</dd></div>
           <div><dt>Laboratory</dt><dd>Image &amp; Media Understanding Lab.</dd></div>
@@ -50,19 +52,20 @@
     <section id="about" class="section about-grid">
       <div>
         <p class="section-number">01 / ABOUT</p>
-        <h2>データから、<br>支援につながる知見を。</h2>
+        <h2>自己紹介</h2>
       </div>
-      <div class="about-copy">
-        <p>九州大学大学院 システム情報科学府に在籍する修士課程の学生です。画像・メディア理解研究室（島田研究室）で、教育データを対象とした機械学習の研究に取り組んでいます。</p>
-        <p>主な研究テーマは、複数の講義が生データを共有せずに協調学習する<strong>連合学習</strong>と、講義間のデータ分布の違い（Non-IID）が予測性能に与える影響の緩和です。学生間の差分に着目したランキングベースの手法を提案し、At-risk学生の早期発見を目指しています。</p>
-        <p>研究で培ったPython・機械学習・データ分析の経験を活かし、データサイエンスやAIを通じて現実の課題を解決することに関心があります。</p>
-      </div>
+      <dl class="personal-details">
+        <div><dt>名前</dt><dd>米田 俊祐 / Shunsuke Yoneda</dd></div>
+        <div><dt>所属</dt><dd>九州大学大学院 システム情報科学府<br>修士課程</dd></div>
+        <div><dt>専攻</dt><dd>情報理工学 / AI</dd></div>
+        <div><dt>出身</dt><dd>福岡県</dd></div>
+        <div><dt>趣味</dt><dd>ゲーム（パズル・対戦）、温泉巡り</dd></div>
+      </dl>
     </section>
 
     <section id="research" class="section research-section">
       <div class="section-heading">
         <div><p class="section-number">02 / RESEARCH</p><h2>研究テーマ</h2></div>
-        <p>Privacy-aware prediction across heterogeneous educational environments.</p>
       </div>
       <article class="feature-card">
         <div class="feature-index">01</div>
@@ -84,8 +87,19 @@
     <section id="publications" class="section">
       <div class="section-heading">
         <div><p class="section-number">03 / PUBLICATIONS</p><h2>学会発表・研究実績</h2></div>
+        <p>新しい順に掲載しています（採択済みを含む）。</p>
       </div>
       <div class="publication-list">
+        <article class="publication">
+          <div class="pub-meta"><span>2026</span><span>International · ICCE 2026</span></div>
+          <div class="pub-body">
+            <p class="tag">Short Paper · Accepted</p>
+            <h3>Differential Features for Mitigating Non-IID Effects in Federated Learning for At-Risk Student Prediction</h3>
+            <p>Shunsuke Yoneda, Gen Li, Daisuke Deguchi, Atsushi Shimada</p>
+            <p class="pub-note">International Conference on Computers in Education · Christchurch, New Zealand</p>
+          </div>
+        </article>
+
         <article class="publication featured">
           <div class="pub-meta"><span>2025</span><span>International · EDM 2025</span></div>
           <div class="pub-body">
@@ -97,16 +111,6 @@
               <a href="https://www.arxiv.org/abs/2505.09287" target="_blank" rel="noopener noreferrer">arXiv ↗</a>
               <a href="https://github.com/limu-research/2025-EDM-FL" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
             </div>
-          </div>
-        </article>
-
-        <article class="publication">
-          <div class="pub-meta"><span>2026</span><span>International · ICCE 2026</span></div>
-          <div class="pub-body">
-            <p class="tag">Short Paper · Accepted</p>
-            <h3>Differential Features for Mitigating Non-IID Effects in Federated Learning for At-Risk Student Prediction</h3>
-            <p>Shunsuke Yoneda, Gen Li, Daisuke Deguchi, Atsushi Shimada</p>
-            <p class="pub-note">International Conference on Computers in Education · Christchurch, New Zealand</p>
           </div>
         </article>
 
@@ -130,38 +134,88 @@
       </div>
     </section>
 
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="section-heading">
+        <div><p class="section-number">04 / ENGINEERING</p><h2 id="experience-title">開発・技術経験</h2></div>
+      </div>
+      <p class="experience-intro">長期インターン・アルバイトで取り組んだ、モデル開発・システム実装・データ分析の事例です。</p>
+      <div class="experience-list">
+        <article class="publication">
+          <div class="pub-meta"><span>長期インターン</span></div>
+          <div class="pub-body">
+            <h3>強化学習による制御モデルの開発・評価</h3>
+            <p>シミュレーション環境での制御最適化に取り組みました。報酬関数の設計、学習の実行、評価処理の自動化、学習が不安定になる原因の調査を担当しました。</p>
+            <p class="pub-note">使用技術：MATLAB、Simulink、強化学習、Git</p>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="pub-meta"><span>長期インターン</span></div>
+          <div class="pub-body">
+            <h3>時系列データを用いた状態推定</h3>
+            <p>物理モデルと観測データを組み合わせた状態推定に取り組みました。パラメータ同定、推定精度の検証、条件を変えたロバスト性評価、誤差要因の分析を担当しました。</p>
+            <p class="pub-note">使用技術：Python、NumPy、SciPy、状態推定</p>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="pub-meta"><span>長期インターン</span></div>
+          <div class="pub-body">
+            <h3>OCR・LLMを用いた文書処理システムの開発</h3>
+            <p>文書から必要な情報を抽出し、構造化して保存する処理の開発を担当しました。プロンプトの調整、出力データの検証、欠損値・想定外出力への対応を通じて、処理の安定性改善に取り組みました。</p>
+            <p class="pub-note">使用技術：Python、LLM API、Pydantic、SQL、Git</p>
+          </div>
+        </article>
+        <article class="publication">
+          <div class="pub-meta"><span>アルバイト</span></div>
+          <div class="pub-body">
+            <h3>地図情報を用いたフラクタル・エントロピー解析</h3>
+            <p>道路・経路の形状の複雑さをフラクタル次元で定量化し、エントロピーとの関係を分析しました。地理空間データの前処理、指標の算出・比較、道路ネットワークと分析結果の可視化を担当しました。</p>
+            <p class="pub-note">使用技術：Python、GeoJSON、グラフ解析、フラクタル次元、エントロピー、Git、Git LFS</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <section class="section split-section">
       <div>
-        <p class="section-number">04 / EDUCATION &amp; AWARDS</p>
-        <h2>学歴・受賞歴</h2>
+        <p class="section-number">05 / EDUCATION &amp; AWARDS</p>
+        <h2>学歴</h2>
         <div class="timeline">
           <div><time>2025 — Present</time><h3>九州大学大学院</h3><p>システム情報科学府 修士課程<br>画像・メディア理解研究室</p></div>
           <div><time>2025</time><h3>九州大学</h3><p>工学部 電気情報工学科 卒業</p></div>
         </div>
       </div>
-      <div class="award-panel">
-        <p class="mini-label">HONORS</p>
-        <div class="award"><span>2025</span><p>電子情報通信学会九州支部<br><strong>成績優秀賞</strong></p></div>
-        <div class="award"><span>2022</span><p>九州大学<br><strong>基幹教育奨励賞</strong></p></div>
+      <div class="award-panel" aria-labelledby="awards-title">
+        <p class="section-number">AWARDS</p>
+        <h2 id="awards-title">受賞歴</h2>
+        <div class="award"><time datetime="2025">2025年</time><div><h3>成績優秀賞</h3><p>電子情報通信学会九州支部</p></div></div>
+        <div class="award"><time datetime="2022">2022年</time><div><h3>基幹教育奨励賞</h3><p>九州大学</p></div></div>
       </div>
     </section>
 
     <section id="skills" class="section skills-section">
       <div class="section-heading">
-        <div><p class="section-number">05 / SKILLS</p><h2>スキル・資格</h2></div>
+        <div><p class="section-number">06 / SKILLS</p><h2>スキル・資格</h2></div>
       </div>
-      <div class="skills-grid">
-        <article><p class="mini-label">PROGRAMMING</p><h3>Python</h3><p>データ前処理、機械学習モデルの構築・評価、実験の自動化</p></article>
-        <article><p class="mini-label">RESEARCH</p><h3>Machine Learning</h3><p>連合学習、ランキング学習、教育データマイニング、Non-IID分析</p></article>
-        <article><p class="mini-label">TOOLS</p><h3>Git · Docker</h3><p>GitHubを用いた共同開発、Dockerによる再現可能な実験環境の構築</p></article>
-        <article><p class="mini-label">CERTIFICATIONS</p><h3>AP · TOEIC 760</h3><p>応用情報技術者試験 合格（2022）<br>TOEIC Listening &amp; Reading 760（2024）</p></article>
-      </div>
+      <h3 class="subsection-title">技術スキル</h3>
+      <dl class="skill-list">
+        <div><dt>プログラミング</dt><dd><strong>Python</strong><p>データ前処理、モデルの構築・評価、実験の自動化</p></dd></div>
+        <div><dt>機械学習・分析</dt><dd><strong>連合学習・ランキング学習・教育データマイニング</strong><p>予測モデルの評価、Non-IID分析</p></dd></div>
+        <div><dt>開発環境</dt><dd><strong>Git・Docker</strong><p>バージョン管理、再現可能な実験環境の構築</p></dd></div>
+      </dl>
+      <h3 class="subsection-title qualifications-title" id="qualifications-title">資格・語学</h3>
+      <ul class="qualification-list" role="list" aria-labelledby="qualifications-title">
+        <li><time datetime="2026-07">2026年7月</time><span class="qualification-name">FP技能検定 3級</span></li>
+        <li><time datetime="2024">2024年2月</time><span class="qualification-name">TOEIC Listening &amp; Reading 760点</span></li>
+        <li><time datetime="2023-06">2023年6月</time><span class="qualification-name">第三種電気主任技術者<span class="qualification-detail">（電験三種）</span></span></li>
+        <li><time datetime="2022">2022年12月</time><span class="qualification-name">応用情報技術者試験</span></li>
+        <li><time datetime="2022-05">2022年5月</time><span class="qualification-name">基本情報技術者試験</span></li>
+      </ul>
     </section>
   </main>
 
   <footer>
-    <div><p class="section-number">LET’S CONNECT</p><h2>Thank you for visiting.</h2></div>
-    <a class="button primary" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHubで見る ↗</a>
+    <div><p class="section-number">LINKS</p><h2>GitHub</h2></div>
+    <a class="button primary" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">公開リポジトリを見る ↗</a>
     <p class="copyright">© <span id="year">2026</span> Shunsuke Yoneda</p>
   </footer>
 
