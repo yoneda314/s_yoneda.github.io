@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="米田俊祐のポートフォリオ。教育データマイニング、連合学習、機械学習に関する研究・発表実績を紹介します。">
+  <meta name="theme-color" content="#07111f">
+  <title>Shunsuke Yoneda | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2307111f'/%3E%3Cpath d='M15 17h9l8 14 8-14h9L36 39v10h-8V39z' fill='%235eead4'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="ページ上部へ">SY<span>.</span></a>
+    <nav aria-label="メインナビゲーション">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#skills">Skills</a>
+    </nav>
+    <a class="header-link" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">MACHINE LEARNING · EDUCATIONAL DATA MINING</p>
+        <h1 id="hero-title">Shunsuke<br><span>Yoneda</span></h1>
+        <p class="hero-ja">米田 俊祐</p>
+        <p class="lead">教育データと機械学習を通して、<br>学習者をより早く、より適切に支援する。</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#publications">研究実績を見る</a>
+          <a class="button secondary" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-label="プロフィール概要">
+        <div class="status"><span></span> Master’s Student</div>
+        <dl>
+          <div><dt>Affiliation</dt><dd>Kyushu University</dd></div>
+          <div><dt>Laboratory</dt><dd>Image &amp; Media Understanding Lab.</dd></div>
+          <div><dt>Focus</dt><dd>Federated Learning<br>Educational Data Mining</dd></div>
+          <div><dt>Location</dt><dd>Fukuoka, Japan</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="about" class="section about-grid">
+      <div>
+        <p class="section-number">01 / ABOUT</p>
+        <h2>データから、<br>支援につながる知見を。</h2>
+      </div>
+      <div class="about-copy">
+        <p>九州大学大学院 システム情報科学府に在籍する修士課程の学生です。画像・メディア理解研究室（島田研究室）で、教育データを対象とした機械学習の研究に取り組んでいます。</p>
+        <p>主な研究テーマは、複数の講義が生データを共有せずに協調学習する<strong>連合学習</strong>と、講義間のデータ分布の違い（Non-IID）が予測性能に与える影響の緩和です。学生間の差分に着目したランキングベースの手法を提案し、At-risk学生の早期発見を目指しています。</p>
+        <p>研究で培ったPython・機械学習・データ分析の経験を活かし、データサイエンスやAIを通じて現実の課題を解決することに関心があります。</p>
+      </div>
+    </section>
+
+    <section id="research" class="section research-section">
+      <div class="section-heading">
+        <div><p class="section-number">02 / RESEARCH</p><h2>研究テーマ</h2></div>
+        <p>Privacy-aware prediction across heterogeneous educational environments.</p>
+      </div>
+      <article class="feature-card">
+        <div class="feature-index">01</div>
+        <div>
+          <p class="tag">Federated Learning × Education</p>
+          <h3>差分特徴を用いた<br>At-risk学生予測</h3>
+        </div>
+        <div class="feature-text">
+          <p>講義ごとに異なるデータ分布を持つ環境で、生データを共有せずに予測モデルを学習。学生ペアの特徴量と成績の「差」を学習することで、絶対値に依存しにくいランキング予測を実現します。</p>
+          <ul>
+            <li>17講義・1,471名の教育データで評価</li>
+            <li>差分特徴とFedAvgを組み合わせたランキング学習</li>
+            <li>Label / Feature / Quantity skewの観点からNon-IID性を分析</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <div><p class="section-number">03 / PUBLICATIONS</p><h2>学会発表・研究実績</h2></div>
+      </div>
+      <div class="publication-list">
+        <article class="publication featured">
+          <div class="pub-meta"><span>2025</span><span>International · EDM 2025</span></div>
+          <div class="pub-body">
+            <p class="tag">Long Paper</p>
+            <h3>Ranking-Based At-Risk Student Prediction Using Federated Learning and Differential Features</h3>
+            <p>Shunsuke Yoneda, Valdemar Švábenský, Gen Li, Daisuke Deguchi, Atsushi Shimada</p>
+            <p class="pub-note">18th International Conference on Educational Data Mining · Palermo, Italy</p>
+            <div class="pub-links">
+              <a href="https://www.arxiv.org/abs/2505.09287" target="_blank" rel="noopener noreferrer">arXiv ↗</a>
+              <a href="https://github.com/limu-research/2025-EDM-FL" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-meta"><span>2026</span><span>International · ICCE 2026</span></div>
+          <div class="pub-body">
+            <p class="tag">Short Paper · Accepted</p>
+            <h3>Differential Features for Mitigating Non-IID Effects in Federated Learning for At-Risk Student Prediction</h3>
+            <p>Shunsuke Yoneda, Gen Li, Daisuke Deguchi, Atsushi Shimada</p>
+            <p class="pub-note">International Conference on Computers in Education · Christchurch, New Zealand</p>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-meta"><span>2025.03</span><span>JSAI · ALST研究会</span></div>
+          <div class="pub-body">
+            <p class="tag">Poster Presentation</p>
+            <h3>差分特徴を用いた連合学習によるAt-risk学生検出の検討</h3>
+            <div class="pub-links"><a href="https://www.jstage.jst.go.jp/article/jsaialst/103/0/103_45/_article/-char/ja" target="_blank" rel="noopener noreferrer">J-STAGE ↗</a></div>
+          </div>
+        </article>
+
+        <article class="publication">
+          <div class="pub-meta"><span>2024.10</span><span>IEICE · ET研究会</span></div>
+          <div class="pub-body">
+            <p class="tag">Oral Presentation</p>
+            <h3>連合学習によるAt-risk学生検出の検討</h3>
+            <div class="pub-links"><a href="https://ken.ieice.org/ken/paper/20241012hcFI/" target="_blank" rel="noopener noreferrer">IEICE Technical Report ↗</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div>
+        <p class="section-number">04 / EDUCATION &amp; AWARDS</p>
+        <h2>学歴・受賞歴</h2>
+        <div class="timeline">
+          <div><time>2025 — Present</time><h3>九州大学大学院</h3><p>システム情報科学府 修士課程<br>画像・メディア理解研究室</p></div>
+          <div><time>2025</time><h3>九州大学</h3><p>工学部 電気情報工学科 卒業</p></div>
+        </div>
+      </div>
+      <div class="award-panel">
+        <p class="mini-label">HONORS</p>
+        <div class="award"><span>2025</span><p>電子情報通信学会九州支部<br><strong>成績優秀賞</strong></p></div>
+        <div class="award"><span>2022</span><p>九州大学<br><strong>基幹教育奨励賞</strong></p></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+      <div class="section-heading">
+        <div><p class="section-number">05 / SKILLS</p><h2>スキル・資格</h2></div>
+      </div>
+      <div class="skills-grid">
+        <article><p class="mini-label">PROGRAMMING</p><h3>Python</h3><p>データ前処理、機械学習モデルの構築・評価、実験の自動化</p></article>
+        <article><p class="mini-label">RESEARCH</p><h3>Machine Learning</h3><p>連合学習、ランキング学習、教育データマイニング、Non-IID分析</p></article>
+        <article><p class="mini-label">TOOLS</p><h3>Git · Docker</h3><p>GitHubを用いた共同開発、Dockerによる再現可能な実験環境の構築</p></article>
+        <article><p class="mini-label">CERTIFICATIONS</p><h3>AP · TOEIC 760</h3><p>応用情報技術者試験 合格（2022）<br>TOEIC Listening &amp; Reading 760（2024）</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div><p class="section-number">LET’S CONNECT</p><h2>Thank you for visiting.</h2></div>
+    <a class="button primary" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHubで見る ↗</a>
+    <p class="copyright">© <span id="year">2026</span> Shunsuke Yoneda</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
