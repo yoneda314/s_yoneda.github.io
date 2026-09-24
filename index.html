@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%2307111f'/%3E%3Cpath d='M15 17h9l8 14 8-14h9L36 39v10h-8V39z' fill='%235eead4'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <script src="theme.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,9 +22,13 @@
       <a href="#research">Research</a>
       <a href="#publications">Publications</a>
       <a href="#experience">Engineering</a>
+      <a href="#education">Education &amp; Awards</a>
       <a href="#skills">Skills</a>
     </nav>
-    <a class="header-link" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    <div class="header-actions">
+      <button class="theme-toggle" type="button" hidden aria-label="ライトモードに切り替える"><span class="theme-icon" aria-hidden="true">☀</span><span class="theme-label">ライト</span></button>
+  <a class="header-link" href="https://github.com/yoneda314" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </div>
   </header>
 
   <main id="top" tabindex="-1">
@@ -71,7 +76,7 @@
         <div class="feature-index">01</div>
         <div>
           <p class="tag">Federated Learning × Education</p>
-          <h3>差分特徴を用いた<br>At-risk学生予測</h3>
+          <h3>連合学習と差分特徴を用いたランキングベースのAt-risk学生予測</h3>
         </div>
         <div class="feature-text">
           <p>講義ごとに異なるデータ分布を持つ環境で、生データを共有せずに予測モデルを学習。学生ペアの特徴量と成績の「差」を学習することで、絶対値に依存しにくいランキング予測を実現します。</p>
@@ -87,7 +92,7 @@
     <section id="publications" class="section">
       <div class="section-heading">
         <div><p class="section-number">03 / PUBLICATIONS</p><h2>学会発表・研究実績</h2></div>
-        <p>新しい順に掲載しています（採択済みを含む）。</p>
+        <p>新しい順に掲載</p>
       </div>
       <div class="publication-list">
         <article class="publication">
@@ -175,7 +180,7 @@
       </div>
     </section>
 
-    <section class="section split-section">
+    <section id="education" class="section split-section">
       <div>
         <p class="section-number">05 / EDUCATION &amp; AWARDS</p>
         <h2>学歴</h2>
